@@ -1,6 +1,7 @@
 # Angular2ECS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5. &nbsp;
+
 This project uses CodeCommit, AWS ECR, and ECS.
 
 ## Development server
@@ -17,4 +18,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Changelogs
 * 14.01.21 - Initial commit
-* 
+* 14.01.21 - README changes
