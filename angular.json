@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular2Container": {
+    "Angular2ECS": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular2Container",
+            "outputPath": "dist/Angular2ECS",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular2Container:build"
+            "browserTarget": "Angular2ECS:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular2Container:build:production"
+              "browserTarget": "Angular2ECS:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular2Container:build"
+            "browserTarget": "Angular2ECS:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular2Container:serve"
+            "devServerTarget": "Angular2ECS:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular2Container:serve:production"
+              "devServerTarget": "Angular2ECS:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Angular2Container"
+  "defaultProject": "Angular2ECS"
 }
