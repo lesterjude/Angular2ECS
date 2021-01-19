@@ -27,3 +27,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * 14.01.21 - README changes
 * 15.01.21 - Following [guide](https://medium.com/bb-tutorials-and-thoughts/aws-deploying-angular-with-nodejs-app-on-ecs-2128208017f8)
 * 18.01.21 - Dockerized the application
+* 19.10.21 - Fixed dockerization issues
