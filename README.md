@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5. &nbsp;
 
-This project uses CodeCommit, Docker, AWS ECR, and ECS.
+This project uses Docker, AWS CodeCommit, CodeBuild, CodePipeline, ECR, and ECS.
 
 ## Prerequisites
 * Angular CLI
@@ -20,11 +20,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for 
+a production build.
 
-## Changelog
+## Command Guides
+* Docker Build : `docker build -t image_tag_name .`
+* Docker Run   : `docker run -dp port:port image_tag_name`
+* Docker Tag   : `docker tag image_tag_name:latest 959773376544.dkr.ecr.eu-west-2.amazonaws.com/image_tag_name:latest`
+* Docker Push  : `docker push 959773376544.dkr.ecr.eu-west-2.amazonaws.com/image_tag_name:latest`
+* Docker PS    : `docker ps`
+* Docker Images: `docker images`
+
+## Changelogs
 * 14.01.21 - Initial commit
 * 14.01.21 - README changes
 * 15.01.21 - Following [guide](https://medium.com/bb-tutorials-and-thoughts/aws-deploying-angular-with-nodejs-app-on-ecs-2128208017f8)
 * 18.01.21 - Dockerized the application
 * 19.10.21 - Fixed dockerization issues
+* 23.01.21 - Added buildspc.yml, imagedefinitions.json needed for CodePipeline

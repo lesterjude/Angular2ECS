@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN yarn install 
 
 #run ng build and copy distributable files to image context
-RUN npm build
+RUN npm build --prod
 COPY /dist/Angular2ECS .
 COPY server.js .
 
