@@ -38,3 +38,4 @@ a production build.
 * 18.01.21 - Dockerized the application
 * 19.1.21 - Fixed dockerization issues
 * 23.01.21 - Added buildspc.yml needed for CodeBuild.
+* 24.01.21 - Following [AWS Build CD Pipeline for Images with ECR as Source Guide](https://aws.amazon.com/blogs/devops/build-a-continuous-delivery-pipeline-for-your-container-images-with-amazon-ecr-as-source/)
