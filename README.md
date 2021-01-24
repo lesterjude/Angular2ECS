@@ -26,15 +26,15 @@ a production build.
 ## Command Guides
 * Docker Build : `docker build -t image_tag_name .`
 * Docker Run   : `docker run -dp port:port image_tag_name`
-* Docker Tag   : `docker tag image_tag_name:latest 959773376544.dkr.ecr.eu-west-2.amazonaws.com/image_tag_name:latest`
-* Docker Push  : `docker push 959773376544.dkr.ecr.eu-west-2.amazonaws.com/image_tag_name:latest`
+* Docker Tag   : `docker tag angular2ecs:latest 959773376544.dkr.ecr.eu-west-2.amazonaws.com/angular2ecs:latest`
+* Docker Push  : `docker push 959773376544.dkr.ecr.eu-west-2.amazonaws.com/angular2ecs:latest`
 * Docker PS    : `docker ps`
 * Docker Images: `docker images`
 
 ## Changelogs
 * 14.01.21 - Initial commit
 * 14.01.21 - README changes
-* 15.01.21 - Following [guide](https://medium.com/bb-tutorials-and-thoughts/aws-deploying-angular-with-nodejs-app-on-ecs-2128208017f8)
+* 15.01.21 - Following [Deploying Angular app on ECS](https://medium.com/bb-tutorials-and-thoughts/aws-deploying-angular-with-nodejs-app-on-ecs-2128208017f8)
 * 18.01.21 - Dockerized the application
-* 19.10.21 - Fixed dockerization issues
-* 23.01.21 - Added buildspc.yml, imagedefinitions.json needed for CodePipeline
+* 19.1.21 - Fixed dockerization issues
+* 23.01.21 - Added buildspc.yml needed for CodeBuild.

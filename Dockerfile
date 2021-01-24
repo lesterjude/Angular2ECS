@@ -9,8 +9,7 @@ RUN yarn install
 RUN npm build --prod
 COPY /dist/Angular2ECS .
 COPY server.js .
-COPY buildspc.yml .
-COPY imagedefinitions.json .
+COPY buildspec.yml .
 
 #expose port 3000
 EXPOSE 3000
