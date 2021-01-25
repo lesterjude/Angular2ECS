@@ -36,6 +36,8 @@ a production build.
 * 14.01.21 - README changes
 * 15.01.21 - Following [Deploying Angular app on ECS](https://medium.com/bb-tutorials-and-thoughts/aws-deploying-angular-with-nodejs-app-on-ecs-2128208017f8)
 * 18.01.21 - Dockerized the application
-* 19.1.21 - Fixed dockerization issues
+* 19.01.21 - Fixed dockerization issues
 * 23.01.21 - Added buildspc.yml needed for CodeBuild.
 * 24.01.21 - Following [AWS Build CD Pipeline for Images with ECR as Source Guide](https://aws.amazon.com/blogs/devops/build-a-continuous-delivery-pipeline-for-your-container-images-with-amazon-ecr-as-source/)
+* 25.01.21 - Following [ECR to ECS Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html)
+* 25.01.21 - Added appspec.yaml and taskdef.json
