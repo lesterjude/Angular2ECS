@@ -2,11 +2,11 @@
 
 FROM node:12-alpine
 WORKDIR /home/node/ 
-COPY package*.json ./
+COPY package.json ./
 RUN yarn install 
 
 #run ng build and copy distributable files to image context
-RUN npm build --prod
+RUN npm run build
 COPY /dist/Angular2ECS .
 COPY server.js .
 COPY buildspec.yml .
