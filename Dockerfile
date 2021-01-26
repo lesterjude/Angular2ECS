@@ -1,5 +1,5 @@
 #base image node alpine
-FROM node:14-alpine AS ui-source
+FROM node:15-alpine AS ui-source
 #set working directory for building source application
 WORKDIR /usr/src
 #copy all source code to WORKDIR
@@ -7,7 +7,7 @@ COPY . ./
 #run yarn install
 RUN npm install && npm run build
 
-FROM node:14-alpine AS ui-build
+FROM node:15-alpine AS ui-build
 #set work directory to the root folder of the node 
 WORKDIR /home/node/
 #copy distributable files to image context
