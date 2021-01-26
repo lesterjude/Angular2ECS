@@ -41,3 +41,4 @@ a production build.
 * 24.01.21 - Following [AWS Build CD Pipeline for Images with ECR as Source Guide](https://aws.amazon.com/blogs/devops/build-a-continuous-delivery-pipeline-for-your-container-images-with-amazon-ecr-as-source/)
 * 25.01.21 - Following [ECR to ECS Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html)
 * 25.01.21 - Added appspec.yaml and taskdef.json
+* 26.01.21 - Removed appsec and taskdef files. Dockerfile changes.
